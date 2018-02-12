@@ -1,4 +1,4 @@
-const errors = require('errors')
+const errors = require('./errors')
 const _ = require('lodash')
 let thrower = {
     r: (error) => {
