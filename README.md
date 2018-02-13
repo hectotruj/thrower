@@ -8,14 +8,18 @@ npm install thrower --save
 ```
 
 ## Usage
-
+Pick the error code that best matches the error you would like to throw. For example:
 ```js
 const thrower = require('thrower');
 
 insertName(name) {
-    if(name.length > 10) thrower.r(1101)
+    if(name.length > 5) thrower.r(1101)
     .
     .
     .
 }
+
+insertName('Star Lord')
 ```
+
+throws `{ error : 1101, message : 'Field max character limit exceeded.'}`
