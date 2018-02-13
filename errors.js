@@ -1,5 +1,5 @@
 const errors = {
-    1000 : 'Malformed error. No error was provided',
+    1000 : 'Malformed error. No error was provided.',
     1001 : 'Malformed error. Please use an integer for an error code.',
     1002 : 'Malformed error. Code provided does not correspond to any error.',
 
