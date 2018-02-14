@@ -4,4 +4,4 @@ install:
   - npm install -g codecov
 script:
   - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
-  - codecovn -t 1c5ea22f-9c1a-4cb8-8e3e-e90b0da76d1f
+  - codecove -t 1c5ea22f-9c1a-4cb8-8e3e-e90b0da76d1f
