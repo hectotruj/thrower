@@ -1,7 +1,8 @@
 # Thrower
-[![codecov](https://codecov.io/gh/hectotruj/thrower/branch/master/graph/badge.svg)](https://codecov.io/gh/hectotruj/thrower)
+[![codecov](https://codecov.io/gh/hectotruj/thrower/branch/master/graph/badge.svg)](https://codecov.io/gh/hectotruj/thrower) [![Build Status](https://travis-ci.org/hectotruj/thrower.svg?branch=master)](https://travis-ci.org/hectotruj/thrower)
 
-Throwing errors gets messy, and, more often than not, is not uniform. We aim to solve the error problem. 
+Simplify throwing errors, write cleaner code, make testing a breeze. Plus, its fun to use: `thrower.r()`... get it? Throw Err. That's right. It's useful and it fun. 
+
 ## Installation
 ```
 npm install thrower --save
