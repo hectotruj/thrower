@@ -1,7 +1,6 @@
 language:
   node_js
 install:
-  - npm install -g codecov
+  - npm install
 script:
-  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
-  - codecove -t 1c5ea22f-9c1a-4cb8-8e3e-e90b0da76d1f
+  - npm run report-coverage
