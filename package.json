@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "nyc mocha",
-    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov -t 1c5ea22f-9c1a-4cb8-8e3e-e90b0da76d1f"
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov -t 1c5ea22f-9c1a-4cb8-8e3e-e90b0da76d1f"
   },
   "repository": {
     "type": "git",

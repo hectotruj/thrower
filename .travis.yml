@@ -3,4 +3,5 @@ language:
 install:
   - npm install
 script:
-  - npm run report-coverage
+  - npm run test
+  - npm run coverage
