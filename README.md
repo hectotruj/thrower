@@ -34,7 +34,6 @@ You don't have to throw our errors, you can use our messages and throw your own.
 ```js
 const thrower = require('thrower');
 
-thrower.get(1100)
+let message = thrower.get(1100)
+// message => 'A required field is missing.'
 ```
-returns:
-`'A required field is missing.'`
