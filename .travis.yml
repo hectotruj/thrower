@@ -3,11 +3,11 @@ language:
     - "9.5.0"
 install:
   - npm install
-
+before_script:
+  - npm install -g npm@'>=3'
 script:
   - npm run test
   - npm run coverage
-
 deploy:
   provider: npm
   email: hectotruj@gmail.com
