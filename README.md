@@ -17,7 +17,7 @@ Pick the error code that best matches the error you would like to throw. For exa
 const thrower = require('thrower');
 
 insertName(name) {
-    if(name.length > 5) thrower.r(1101)
+    if(name.length > 5) thrower.r('FIELD_TOO_LONG')
     .
     .
     .
@@ -34,6 +34,6 @@ You don't have to throw our errors, you can use our messages and throw your own.
 ```js
 const thrower = require('thrower');
 
-let message = thrower.get(1100)
+let message = thrower.get('FIELD_MISSING')
 // message => 'A required field is missing.'
 ```
