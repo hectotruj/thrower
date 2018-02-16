@@ -20,13 +20,19 @@ Pick the error code that best matches the error you would like to throw. For exa
 const thrower = require('thrower');
 insertName(name) {
     if(name.length > 5) thrower.r('FIELD_TOO_LONG')
-    .
-    .
-    .
+    ...
 }
 
 insertName('Star Lord')
-// throws => { error : 'FIELD_TOO_LONG, description : 'Field max character limit exceeded.', details : 'at insertName(/home/example/index.js:3:10)'}
+/**
+ * throws => 
+ * { 
+ *    error : 'FIELD_TOO_LONG, 
+ *    description : 'Field max character limit exceeded.', 
+ *    details : 'at insertName(/home/example/index.js:3:10)'
+ * }
+ * /
+ 
 ```
 
 or
@@ -35,17 +41,23 @@ or
 const thrower = require('thrower');
 const MAX_FIELD_LENGTH = 5
 insertName(name) {
-    if(name.length > MAX_FIELD_LENGTH) thrower.r('FIELD_TOO_LONG', `Name must be less than ${MAX_FILED_LENGTH} chars.`)
-    .
-    .
-    .
+    if(name.length > MAX_FIELD_LENGTH) 
+        thrower.r('FIELD_TOO_LONG', `Name must be less than ${MAX_FILED_LENGTH} chars.`)
+    ...
 }
 
 insertName('Star Lord')
-// throws => { error : 'FIELD_TOO_LONG, description' : 'Field max character limit exceeded.', details : 'at insertName(/home/example/index.js:4:10)', message : 'Name must be less than 5 chars.'}
+/**
+ * throws => 
+ * { 
+ *    error : 'FIELD_TOO_LONG, 
+ *    description' : 'Field max character limit exceeded.', 
+ *    details : 'at insertName(/home/example/index.js:5:10)', 
+ *    message : 'Name must be less than 5 chars.'
+ * }
 ```
 
-### thrower.get()
+### thrower.get(error : string)
 You don't have to throw our errors, you can use our description and throw your own. For example:
 
 ```js
