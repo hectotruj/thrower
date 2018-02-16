@@ -9,7 +9,7 @@ describe('Thrower', function () {
                 thrower.r()
             } catch (err) {
                 expect(err.error).to.equal('NO_ERR')
-                expect(err.message).to.equal('Malformed error. No error was provided.')
+                expect(err.description).to.equal('Malformed error. No error was provided.')
             }
         });
         it('should throw: Malformed error. Code provided does not correspond to any error.', function () {
@@ -17,7 +17,7 @@ describe('Thrower', function () {
                 thrower.r('NODE_ERROR')
             } catch (err) {
                 expect(err.error).to.equal('NODE_CODE')
-                expect(err.message).to.equal('Malformed error. Code provided does not correspond to any error.')
+                expect(err.description).to.equal('Malformed error. Code provided does not correspond to any error.')
             }
         });
         it('should throw: A required field is missing.', function () {
@@ -25,7 +25,17 @@ describe('Thrower', function () {
                 thrower.r('FIELD_MISSING')
             } catch (err) {
                 expect(err.error).to.equal('FIELD_MISSING')
-                expect(err.message).to.equal('A required field is missing.')
+                expect(err.description).to.equal('A required field is missing.')
+                expect(err.message).to.be.undefined
+            }
+        });
+        it('should throw: A required field is missing with a message', function () {
+            try {
+                thrower.r('FIELD_MISSING', 'Username is required.')
+            } catch (err) {
+                expect(err.error).to.equal('FIELD_MISSING')
+                expect(err.description).to.equal('A required field is missing.')
+                expect(err.message).to.equal('Username is required.')
             }
         });
     });
