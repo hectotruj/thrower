@@ -27,7 +27,7 @@ insertName('Star Lord')
 ```
 
 throws:
- `{ error : 1101, message : 'Field max character limit exceeded.'}`
+ `{ error : 'FIELD_TOO_LONG, message' : 'Field max character limit exceeded.'}`
 
 You don't have to throw our errors, you can use our messages and throw your own. For example:
 
