@@ -1,8 +1,10 @@
 {
   "name": "thrower",
-  "version": "0.4.3-alpha",
-  "description": "Simplifying throwing errors",
+  "version": "1.4.3",
   "main": "index.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "scripts": {
     "test": "nyc mocha",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov -t 1c5ea22f-9c1a-4cb8-8e3e-e90b0da76d1f"
@@ -12,9 +14,9 @@
     "url": "git+https://github.com/hectotruj/thrower.git"
   },
   "keywords": [
+    "javascript",
     "throw",
-    "error",
-    "javascript"
+    "error"
   ],
   "author": "Hector A. Trujillo",
   "license": "MIT",
