@@ -12,5 +12,3 @@ deploy:
   provider: npm
   email: hectotruj@gmail.com
   api_key: $NPM_TOKEN
-  on:
-    tags: true
