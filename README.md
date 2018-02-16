@@ -15,7 +15,7 @@ npm install thrower --save
 ## Usage
 Pick the error code that best matches the error you would like to throw. For example:
 
-### thrower.r()
+### thrower.r(error : string, message? : string)
 ```js
 const thrower = require('thrower');
 insertName(name) {
