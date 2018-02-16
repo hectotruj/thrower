@@ -3,6 +3,14 @@ language:
     - "9.5.0"
 install:
   - npm install
+
 script:
   - npm run test
   - npm run coverage
+
+deploy:
+  provider: npm
+  email: hectotruj@gmail.com
+  api_key: $NPM_TOKEN
+  on:
+    tags: true
