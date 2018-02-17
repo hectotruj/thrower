@@ -10,6 +10,8 @@ const errors = {
     'FIELD_PASSWORD_WEAK' : 'Password entered is too weak.',
     'FIELD_USERNAME_TAKEN' : 'Username entered is already taken.',
 
+    'FILE_MISSING' : 'File does not exist',
+
     'DB_ERROR' : 'There is an error with the database',
     'DB_UNABLE_TO_CONNECT' : 'Unable to open database connection.',
 
