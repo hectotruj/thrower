@@ -3,7 +3,7 @@ const _ = require('lodash')
 let thrower = {
     r: (error, message = '') => {
         if (_.isEmpty(error)) error = 'NO_ERR';
-        if (_.isEmpty(errors[error])) error = 'NODE_CODE';
+        if (_.isEmpty(errors[error])) error = 'UNKNOWN_CODE';
 
         let details = ((new Error().stack).split("at ")[3]).trim();
 
@@ -12,7 +12,7 @@ let thrower = {
     },
     get: (error) => {
         if (_.isEmpty(error)) error = 'NO_ERR';
-        if (_.isEmpty(errors[error])) error = 'NODE_CODE';
+        if (_.isEmpty(errors[error])) error = 'UNKNOWN_CODE';
         return errors[error];
     }
 }

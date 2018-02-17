@@ -13,6 +13,8 @@ npm install thrower --save
 ```
 
 ## Usage
+[Error Definitions](https://hectotruj.gitbooks.io/thrower/content/error-codes.html)
+
 Pick the error code that best matches the error you would like to throw. For example:
 
 ### thrower.r(error : string, message? : string)
@@ -55,6 +57,7 @@ insertName('Star Lord')
  *    details : 'at insertName(/home/example/index.js:5:10)', 
  *    message : 'Name must be less than 5 chars.'
  * }
+ * 
 ```
 
 ### thrower.get(error : string)
@@ -66,3 +69,8 @@ const thrower = require('thrower');
 let description = thrower.get('FIELD_MISSING')
 // description => 'A required field is missing.'
 ```
+
+## Constributions
+Tell us how we can do better!
+
+We love our community. We are not perfect and we don't aim to be, but we do aim to provide a tool our community loves. Feel free to open an issue to suggest new codes and definitions or methods. 

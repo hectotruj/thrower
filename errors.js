@@ -1,6 +1,6 @@
 const errors = {
     'NO_ERR' : 'Malformed error. No error was provided.',
-    'NODE_CODE' : 'Malformed error. Code provided does not correspond to any error.',
+    'UNKNOWN_CODE' : 'Malformed error. Code provided does not correspond to any error.',
 
     'FIELD_MISSING' : 'A required field is missing.',
     'FIELD_TOO_LONG' : 'Field maximum character limit exceeded.',

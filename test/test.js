@@ -16,7 +16,7 @@ describe('Thrower', function () {
             try {
                 thrower.r('NODE_ERROR')
             } catch (err) {
-                expect(err.error).to.equal('NODE_CODE')
+                expect(err.error).to.equal('UNKNOWN_CODE')
                 expect(err.description).to.equal('Malformed error. Code provided does not correspond to any error.')
             }
         });
