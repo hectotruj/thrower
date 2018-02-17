@@ -57,7 +57,8 @@ insertName('Star Lord')
  *    details : 'at insertName(/home/example/index.js:5:10)', 
  *    message : 'Name must be less than 5 chars.'
  * }
- * 
+ * /
+ 
 ```
 
 ### thrower.get(error : string)
