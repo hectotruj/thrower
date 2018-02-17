@@ -8,7 +8,15 @@ describe('Thrower', function () {
             try {
                 thrower.r()
             } catch (err) {
-                expect(err.error).to.equal('NO_ERR')
+                expect(err.error).to.equal('NO_ERROR')
+                expect(err.description).to.equal('Malformed error. No error was provided.')
+            }
+        });
+        it('should throw, with null error: Malformed error. No error was provided.', function () {
+            try {
+                thrower.r(null)
+            } catch (err) {
+                expect(err.error).to.equal('NO_ERROR')
                 expect(err.description).to.equal('Malformed error. No error was provided.')
             }
         });
@@ -44,7 +52,7 @@ describe('Thrower', function () {
             expect(thrower.get()).to.equal('Malformed error. No error was provided.')
         });
         it('should get: Malformed error. Code provided does not correspond to any error.', function () {
-            expect(thrower.get('NO_ERROR')).to.equal('Malformed error. Code provided does not correspond to any error.')
+            expect(thrower.get('NODE_ERROR')).to.equal('Malformed error. Code provided does not correspond to any error.')
         });
         it('should get: A required field is missing.', function () {
             expect(thrower.get('FIELD_MISSING')).to.equal('A required field is missing.')

@@ -1,6 +1,7 @@
 const errors = {
-    'NO_ERR' : 'Malformed error. No error was provided.',
+    'NO_ERROR' : 'Malformed error. No error was provided.',
     'UNKNOWN_CODE' : 'Malformed error. Code provided does not correspond to any error.',
+    'ERROR' : 'There is an error with the application',
 
     'FIELD_MISSING' : 'A required field is missing.',
     'FIELD_TOO_LONG' : 'Field maximum character limit exceeded.',
@@ -9,7 +10,7 @@ const errors = {
     'FIELD_PASSWORD_WEAK' : 'Password entered is too weak.',
     'FIELD_USERNAME_TAKEN' : 'Username entered is already taken.',
 
-    'DB_ERROR' : 'Uncaught database error.',
+    'DB_ERROR' : 'There is an error with the database',
     'DB_UNABLE_TO_CONNECT' : 'Unable to open database connection.',
 
     'IM_A_TEACUP' : 'I\'m a teacup'
