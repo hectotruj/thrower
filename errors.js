@@ -15,6 +15,10 @@ const errors = {
     'FILE_TOO_LARGE': 'File is too large.',
     'FILE_EXTENSION_UNSUPPORTED': 'File extension is not supported.',
 
+    'AUTHENTICATION_ERROR': 'User could not be authenticated.',
+    'AUTHORIZATION_ERROR': 'User is not authorizaed.',
+
+
     'DB_ERROR': 'There is an error with the database.',
     'DB_UNABLE_TO_CONNECT': 'Unable to open database connection.',
 
