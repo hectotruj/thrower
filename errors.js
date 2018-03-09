@@ -16,7 +16,9 @@ const errors = {
     'FILE_EXTENSION_UNSUPPORTED': 'File extension is not supported.',
 
     'AUTHENTICATION_ERROR': 'User could not be authenticated.',
-    'AUTHORIZATION_ERROR': 'User is not authorizaed.',
+    'AUTHORIZATION_ERROR': 'User is not authorized.',
+    'INVALID_TOKEN_ERROR': 'Token provided is not valid.',
+    'EXPIRED_TOKEN_ERROR': 'Token provided has expired.',
 
 
     'DB_ERROR': 'There is an error with the database.',
