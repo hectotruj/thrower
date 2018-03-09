@@ -7,6 +7,14 @@
 `NO_ERROR` : Malformed error. No error was provided.
 `UNKNOWN_CODE` : Malformed error. Code provided does not correspond to any error.
 
+### Authentication Errors
+
+`AUTHENTICATION_ERROR` : User could not be authenticated.
+
+`AUTHORIZATION_ERROR` : User is not authorized.
+`INVALID_TOKEN_ERROR` : Token provided is not valid.
+`EXPIRED_TOKEN_ERROR` : Token provided has expired.
+
 ### Database Errors
 
 `DB_ERROR` : Uncaught database error.
