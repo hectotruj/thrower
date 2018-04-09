@@ -4,6 +4,7 @@ const errors = {
     'ERROR': 'There is an error with the application.',
 
     'FIELD_MISSING': 'A required field is missing.',
+    'FIELD_INVALID' : 'The field entered is not valid.',
     'FIELD_TOO_LONG': 'Field maximum character limit exceeded.',
     'FIELD_TOO_SHORT': 'Field minimum character limit exceeded.',
     'FIELD_NOT_ALPHANUMERIC': 'Field must be alphanumeric.',

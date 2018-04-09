@@ -1,6 +1,6 @@
 {
   "name": "thrower",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "main": "index.js",
   "engines": {
     "node": ">=9.5.0"

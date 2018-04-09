@@ -25,6 +25,7 @@
 
 `FIELD_MISSING` : A required field is missing.
 
+`FIELD_INVALID` : The field entered is not valid.
 `FIELD_NOT_ALPHANUMERIC` : Field must be alphanumeric.
 `FIELD_PASSWORD_WEAK` : Password entered is too weak.
 `FIELD_TOO_LONG` : Field maximum character limit exceeded.
