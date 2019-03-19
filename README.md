@@ -3,6 +3,7 @@
 [![codecov](https://codecov.io/gh/hectotruj/thrower/branch/master/graph/badge.svg)](https://codecov.io/gh/hectotruj/thrower) 
 
 Simplify throwing errors, write cleaner code, make testing a breeze. Plus, its fun to use: `thrower.r()`... get it? Throw Err. That's right. It's useful and it fun. 
+
 ## Introduction
 
 We feel errors have turned into more of a pain than a tool, and we want to fix that. Normally we write custom errors and then forget about them, or we wait for an indecipherable stack trace. The idea is: Find the error that best fits the condition you'd like to prevent and throw it when you meet the condition. Use and reuse errors.
